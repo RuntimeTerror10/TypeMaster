@@ -3,15 +3,39 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background: #000000;
+  background: #191919;
 }
-
+.score-div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  padding-top: 50px;
+}
+.high-sc {
+  color: white;
+  font-size: 2.2rem;
+  padding-top: 50px;
+}
+.score-bd {
+  display: flex;
+  justify-content: space-around;
+}
+.hi-sc {
+  text-align: center;
+}
+.score {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+}
 .keyboard-base {
   max-width: 1085px;
 
   padding: 20px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(197, 197, 197);
@@ -31,14 +55,17 @@ body {
   font-size: 20px;
   text-align: center;
   padding-top: 17px;
+  box-shadow: 2.5px 2.5px 8px #191919;
   transition: 0.2s ease-in-out;
 }
+
 .target {
-  width: 65px;
+  width: 67px;
   animation: target 0.3s;
   animation-iteration-count: infinite;
   background: #000000;
   color: white;
+
   transition: 0.2s ease-in-out;
 }
 @keyframes target {
@@ -92,4 +119,10 @@ body {
 
 .space {
   grid-column: span 13;
+}
+h2 {
+  text-align: center;
+  color: #ffff;
+  padding-top: 20px;
+  font-size: 2.2rem;
 }

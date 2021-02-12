@@ -26,6 +26,9 @@ window.addEventListener("keydown", function (e) {
 });
 */
 var randKey = generateRandomKey();
+var score = document.querySelector(".score");
+var highScore = 0;
+var highScoreDisp = document.querySelector(".hi-sc");
 
 window.addEventListener("keydown", function (e) {
   let enteredKey = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -37,8 +40,15 @@ window.addEventListener("keydown", function (e) {
     targetKey.classList.remove("target");
     let nextKey = generateRandomKey();
     randKey = nextKey;
+    score.innerText++;
+    console.log(score);
   } else {
-    console.log("not a match");
+    if (highScore < Number(score.innerText)) {
+      highScore = score.innerText;
+      highScoreDisp.innerText = highScore;
+    }
+    score.innerText = 0;
+    alert("Ahh !! Lost the streak :( \n Try again !!");
   }
 });
 
