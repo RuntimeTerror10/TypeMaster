@@ -3,7 +3,7 @@ var score = document.querySelector(".score");
 var highScore = 0;
 var highScoreDisp = document.querySelector(".hi-sc");
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener("keydown", (e) => {
   let enteredKey = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   let targetKeyCode = randKey;
   let targetKey = document.querySelector(`.key[data-key="${targetKeyCode}"]`);

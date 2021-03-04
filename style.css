@@ -12,16 +12,16 @@ body {
   font-size: 2.2rem;
   padding-top: 50px;
 }
-.high-sc {
+.high-score-div {
   color: white;
   font-size: 2.2rem;
   padding-top: 50px;
 }
-.score-bd {
+.score-board {
   display: flex;
   justify-content: space-around;
 }
-.hi-sc {
+.high-score {
   text-align: center;
 }
 .score {
@@ -80,47 +80,35 @@ body {
   }
 }
 
-.delete {
-  grid-column: span 4;
-}
-
-.tab {
-  grid-column: span 3;
-}
-
+.tab,
 .backslash {
   grid-column: span 3;
 }
 
-.capslock {
+.capslock,
+.return,
+.delete {
   grid-column: span 4;
 }
 
-.return {
-  grid-column: span 4;
-}
-
-.leftshift {
-  grid-column: span 5;
-}
-
+.leftshift,
 .rightshift {
   grid-column: span 5;
 }
 
-.leftctrl {
+.leftctrl,
+.command {
   grid-column: span 3;
 }
 
 .command {
-  grid-column: span 3;
   font-size: 14px;
 }
 
 .space {
   grid-column: span 13;
 }
-h2 {
+.head {
   text-align: center;
   color: #ffff;
   padding-top: 20px;
