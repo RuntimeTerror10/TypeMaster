@@ -1,7 +1,7 @@
 var randKey = generateRandomKey();
 var score = document.querySelector(".score");
 var highScore = 0;
-var highScoreDisp = document.querySelector(".hi-sc");
+var highScoreDisp = document.querySelector(".high-score");
 
 window.addEventListener("keydown", (e) => {
   let enteredKey = document.querySelector(`.key[data-key="${e.keyCode}"]`);
