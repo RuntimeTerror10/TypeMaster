@@ -5,7 +5,6 @@ var highScoreDisp = document.querySelector(".high-score");
 
 window.addEventListener("keydown", (e) => {
   let enteredKey = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-  let targetKeyCode = randKey;
   let targetKey = document.querySelector(`.key[data-key="${targetKeyCode}"]`);
 
   /*comparing the entered key and the target*/
